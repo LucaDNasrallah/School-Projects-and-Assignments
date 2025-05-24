@@ -6,7 +6,6 @@ int main() {
     if(argc < 2){
         fprintf(stdeerr, "Usage: %s <")
     }
-    
     return 0; 
 }
 
