@@ -29,36 +29,25 @@ int main(){
 
     do{
         displayMenu(); // Show the menu seen in function.c
-        scanf("%d",&choice); 
-        while (getchar() != '\n'); // clear input buffer
+        scanf("%d", &choice); 
        switch (choice) {
             case 1:
                 displayEntries(); // Call displayEntries; it uses the global 'entries' and 'entryCount'
                 break;
             case 2:
-                printf("Choice 2: Expense Distribution - Not implemented yet.\n");
-                printf("\nPress Enter to continue...");
-                getchar(); // Wait for user to press Enter
+                expenseDistribution(); 
                 break;
             case 3:
-                printf("Choice 3: Sort Entries - Not implemented yet.\n");
-                printf("\nPress Enter to continue...");
-                getchar(); // Wait for user to press Enter
+                sortEntries(); 
                 break;
             case 4:
-                printf("Choice 4: Add income/ expense entry - Not implemented yet.\n");
-                printf("\nPress Enter to continue...");
-                getchar(); // Wait for user to press Enter
+                addEntry();
                 break;
             case 5:
-                printf("Choice 5: Modify Entry - Not implemented yet.\n");
-                printf("\nPress Enter to continue...");
-                getchar(); // Wait for user to press Enter
+                modifyEntry();
                 break;
             case 6:
-                printf("Choice 6: Filter by month - Not implemented yet.\n");
-                printf("\nPress Enter to continue...");
-                getchar(); // Wait for user to press Enter
+                filterByMonth(); 
                 break;
             case 7:
                 printf("Exiting program.\n"); // Exit message for the user
