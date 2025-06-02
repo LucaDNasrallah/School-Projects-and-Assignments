@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <title>Home Page for adoptadogorcat.com</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Hope for Paws Foundation</h1>
+            <div class="image-container">
+                <a href = "index.html">
+                    <img src="hopeforpawsfoundation.webp" alt="Logo">
+                </a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="sideBar">
+                <nav>
+                    <ul> 
+                        <li><a href = "index.html"> Privacy Page</a></li>
+                        <li><a href= "browse.html"> Browse Available Pets</a></li>
+                        <li class = "home disabled"><a href="find.html">Find a Dog or a Cat</a></li>
+                        <li><a href="dogcare.html">Dog Care</a></li>
+                        <li><a href = "catcare.html">Cat Care</a></li>
+                        <li><a href = "giveaway.html" >Give Away a Dog or a Cat</a></li>
+                        <li><a href =  "contactus.html">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content">
+                <form action="find.html" method="post">
+                    <table>
+                        <tr style="text-align: center; ">
+                            <td>
+                                <h2>Find a Dog or a Cat!</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height: 25px; font-size: 20px;">
+                                Which would you like to choose:
+                                <input type="radio" id="dog" name="type" value="dog">
+                                <label for="dog">Dog</label>
+                                <input type="radio" id="cat" name="type" value="cat">
+                                <label for="cat">Cat</label>
+                                <input type="radio" id="doesnt-matter" name="type" value="doesn't matter">
+                                <label for="doesnt-matter">Doesn't matter</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height: 25px; font-size: 20px;">
+                                <label for="age">Age Category:</label>
+                                <select id="age" name="age">
+                                    <option value="under 6 month">0-6 months old</option>
+                                    <option value="between 6-12 month">6-12 months old</option>
+                                    <option value="between 1-4 years">1-4 years old</option>
+                                    <option value="more than 4 years">4+ years old</option>
+                                    <option value="doesn't matter">Doesn't matter</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style= "font-size: 20px;">
+                                Gender:
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                                <input type="radio" id="gender-doesnt-matter" name="gender" value="doesn't matter">
+                                <label for="gender-doesnt-matter">Doesn't matter</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height: 25px; font-size: 20px;">
+                                <label>Should get along with:</label><br>
+                                <input type="checkbox" id="dogs" name="compatibility" value="dogs">
+                                <label for="dogs">Other Dogs</label><br>
+                                <input type="checkbox" id="cats" name="compatibility" value="cats">
+                                <label for="cats">Other Cats</label><br>
+                                <input type="checkbox" id="children" name="compatibility" value="children">
+                                <label for="children">Small Children</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height: 25px; font-size: 20px;">
+                                <button type="submit">Submit</button>
+                                <button type="reset">Clear</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="footer"><a href = "pirvacy.html"> Hope for Paw Foundation &copy; 2025 </a></div>
+    </div>
+</body>
+</html>

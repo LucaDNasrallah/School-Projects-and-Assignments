@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 1 - Question 2</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1> Nested Tables</h1>
+    <table>
+        <tr> <!--This is Row 1-->
+            <th>Header column 1</th>
+            <th>Header column 2</th>
+            <th>Header column 3</th>
+            <th>Header column 4</th>
+        </tr>
+        <tr> <!--This is Row 2-->
+            <td>Row 2 - Item 1</td>
+            <td>Row 2 - Item 2</td>
+            <td rowspan="2">
+                <b>Row 2 - Nested Table 1</b>
+                <table>
+                    <tr>
+                        <th>Row 1 header</th>
+                        <td>item</td>
+                    </tr>
+                    <tr>
+                        <th>Row 2 Header</th>
+                        <td>item</td>
+                    </tr>
+                    <tr>
+                        <th>Row 3 Header</th>
+                        <td>item</td>
+                    </tr>
+                </table>
+            </td>
+            <td>Row 2 - Item 4 <br/>A Second line</td>
+        </tr>
+        <tr> <!--This is Row 3-->
+            <td>
+                <b>Row 3 - Nested Table 2</b>
+                <table>
+                    <tr>
+                        <th>Row 1 Header</th>
+                        <td>item</td>
+                    </tr>
+                    <tr>
+                        <th>Row 2 Header</th>
+                        <td>item</td>
+                    </tr>
+                </table>
+            </td>
+            <td>Row 3 - Item 2</td>
+            <td rowspan="2">Row 3 - Item 3</td>
+        </tr>
+        <tr> <!--Row 4-->
+            <td>Row 4 - Item 1</td>
+            <td>Row 4 - Item 2</td>
+            <td>Row 4 - Item 3</td>
+        </tr>
+        <tr>
+            <td colspan="4">Row 5 - Last row of the outer table.</td>
+        </tr>
+    </table>
+</body>
+</html>

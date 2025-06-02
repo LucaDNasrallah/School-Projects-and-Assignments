@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 6 - PseudoClass Hoever Selector</title>
+    <style>
+      body{
+        font-family: 'Times New Roman', Times, serif;
+      }
+      ul{
+        list-style-type: none;
+        border: 1px solid white;
+        width: 200px;
+        padding: 3px;
+        text-align: center;
+      }
+      .disabled{
+        pointer-events:none;
+      }
+        li{
+            padding: 10px;
+            background-color: white;
+        }
+        li:hover{
+            background-color: rgb(5, 5, 5);
+            color: white;
+        }
+        .home{
+            background-color: green;
+            color: white;
+        }
+        .home:active{
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<h1> Vertial Menu Bar</h1>
+<p>"Home" is the current page. There are four menu items. </p>
+<ul> 
+    <li class = "home disabled"> Home</li>
+    <li>About</li>
+    <li>Services</li>
+    <li>Contact</li>
+</ul>
+</body>
+</html>

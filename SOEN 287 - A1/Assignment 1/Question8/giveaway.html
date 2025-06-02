@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <title>Home Page for adoptadogorcat.com</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Hope for Paws Foundation</h1>
+            <div class="image-container">
+                <a href = "index.html">
+                    <img src="hopeforpawsfoundation.webp" alt="Logo">
+                </a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="sideBar">
+                <nav>
+                    <ul> 
+                        <li><a href = "index.html"> Privacy Page</a></li>
+                        <li><a href= "browse.html"> Browse Available Pets</a></li>
+                        <li><a href="find.html">Find a Dog or a Cat</a></li>
+                        <li><a href="dogcare.html">Dog Care</a></li>
+                        <li><a href = "catcare.html">Cat Care</a></li>
+                        <li class = "home disabled"><a href = "giveaway.html" >Give Away a Dog or a Cat</a></li>
+                        <li><a href =  "contactus.html">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content">
+                <form action="giveaway.html" method="post">
+                    <table style = "border: 1px solid black; ">
+                        <tr>
+                            <td>
+                                <h3>Give Away Your Pet for Adoption!</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Choose Animal</b><br>
+                                <input type="radio" id="dog" name="choose" value="dog">
+                                <label for="dog">Dog</label>
+                                <input type="radio" id="cat" name="choose" value="cat">
+                                <label for="cat">Cat</label>
+                            </td>
+                            <td>
+                                <label for="breed">Breed (or Mix Breed):</label>
+                                <input type="text" id="breed" name="breed" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> 
+                                <label for="age"> <b>Age Category:</b></label>
+                                <select id="age" name="age" required>
+                                    <option value="">Select an Age</option>
+                                    <option value="under 6 month">0-6 months old</option>
+                                    <option value="between 6-12 month">6-12 months old</option>
+                                    <option value="between 1-4 years">1-4 years old</option>
+                                    <option value="more than 4 years">4+ years old</option>
+                                </select>
+                            </td>
+                            <td>
+                                <b>Gender</b><br>
+                                <input type="radio" id="male" name="male" value="male">
+                                <label for="male">Male</label>
+                                <input type="radio" id="female" name="female" value="female">
+                                <label for="female">Female</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Gets along with other pets:</label><br>
+                                <input type="checkbox" id="dogs" name="compatibility" value="dogs">
+                                <label for="dogs">Other Dogs</label>
+                                <input type="checkbox" id="cats" name="compatibility" value="cats">
+                                <label for="cats">Other Cats</label>
+                                <input type="checkbox" id="children" name="compatibility" value="children">
+                                <label for="children">Small Children</label>
+                            </td>
+                            <td>
+                                <label for="comment">Tell us about the pet:</label><br>
+                                <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Brag about your pet here!"></textarea><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="ownerName">Current Owner's Name:</label><br>
+                                <input type="text" id="ownerName" name="ownerName" required><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="ownerEmail">Current Owner's Email:</label><br>
+                                <input type="email" id="ownerEmail" name="ownerEmail" required><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="submit">Submit</button>
+                                <button type="reset">Clear</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="footer"><a href = "pirvacy.html"> Hope for Paw Foundation &copy; 2025 </a></div>
+    </div>
+</body>
+</html>

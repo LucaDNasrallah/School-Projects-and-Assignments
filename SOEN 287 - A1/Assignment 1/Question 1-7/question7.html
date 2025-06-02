@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 7 - Overlapped Text Boxes</title>
+    <!-- <link rel="stylesheet" href="style.css"> This is how I would link the reference to a separate CSS file. Chose to keep in one file. Easier to read :) -->
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 10px;
+        }
+        .box { /* This is the parent grid */
+            border: 2px solid black; 
+            padding: 5px;
+            width: 200px;
+            height: 200px; /* This is the height and width of the parent Grid */
+            position: absolute;
+        }
+        .red { /* This is a span element to adapt the text color and boldness */
+            color: red;
+            text-align: center;
+            font-weight: bold;
+        }
+        .first { /* This is the child grid */
+            border: 2px dotted green;
+            top: 50px;
+            text-align: center;
+        }
+        .second { /* This is the child grid */
+            border: 2px dotted orange;
+            top: 215px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>Overlapping Boxes</h3>
+    <div class="box first">
+        <span class="red">This is a DIV Container</span>
+    </div>
+    <div class="box second">
+        DIVS are a powerful way to modularize presentations.
+    </div>
+</body>
+</html>

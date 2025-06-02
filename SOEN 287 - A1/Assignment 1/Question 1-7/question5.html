@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5 - The CSS Box Model</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 10px;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        .paragraph {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .border {
+            border: 2px solid black;
+            padding: 1px;
+            background-color: darkgray;
+            display: inline-block;
+            margin: auto;
+        }
+        .margin {
+            margin: 20px;
+            background-color: white;
+            padding: 20px;
+        }
+        .padding {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: lightyellow;
+        }
+        .content {
+            color: black;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+<h1>CSS Box Model</h1>
+<p class="paragraph">A real mathematician can mathematically mathematise mathematics in a mathematical mathematiculation</p>
+<div class="border">
+    <div class="margin">
+        <div class="padding">
+            <div class="content">
+                Dizzy divs divide distinctly,
+                Dynamically displaying delightful designs,
+                But don’t dare distort the default dimensions!
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

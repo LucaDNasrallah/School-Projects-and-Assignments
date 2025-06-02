@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 - Question 3</title>
+    <style>
+        body{
+            font-family: "Times New Roman", Times, serif;
+            font-size: 10px
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td>
+                <h1> Music Survey</h1>
+            </td>
+            <td>
+                <a href = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg7cde9u45fJb-9eCq818uRSGjP3RA_0EUNw&s" target = "_blank">
+                   <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg7cde9u45fJb-9eCq818uRSGjP3RA_0EUNw&s" alt = "Music Logo"> <!-- Insert an image in here -->
+                </a>
+            </td>
+            </tr>
+    </table>
+
+    <form> <!-- This is the first legend -->
+        <fieldset>
+            <legend> User Information</legend>
+            <label for = "first_name">First Name: </label>
+            <input type = "text" id="first_name" name  = "first_name"> <br><br>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name"><br><br>
+
+            Gender <!--I Don't know why this works XD -->
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <p></p>
+
+            <label for = "age">Age Category:</label>
+            <select id = "age" name = "age">
+                <option value = "under_18">Under 18</option>
+                <option value = "18_25">18-25</option>
+                <option value = "36_50">36-50</option>
+                <option value = "50+">50+</option>
+            </select>
+            <p></p>
+            <label for = "gender">Email: </label>
+            <input type = "text" id = "gender" name = "gender" value = "Male">
+        </fieldset>
+    </form>
+    <form> <!-- This is the second legend -->
+        <fieldset>
+            <legend>Survey Questions</legend>
+            <p> Which type of music do you listen to? (Pick as many as apply)</p>
+
+            <input type = "checkbox" id ="rock" name ="genre" value = "rock">
+            <label for ="rock"> Rock</label>
+
+            <input type = "checkbox" id = "pop" name ="genre" value = "pop">
+            <label for ="pop"> Pop</label>
+
+            <input type = "checkbox" id = "jazz" name ="genre" value = "jazz">
+            <label for ="jazz"> Jazz</label>
+
+            <input type = "checkbox" id = "funk" name ="genre" value = "funk">
+            <label for ="funk">Funk</label>
+            <p></p>
+            <input type = "checkbox" id = "classical" name ="genre" value = "classical">
+            <label for ="classical"> Classical</label>
+
+            <input type = "checkbox" id = "reggae" name ="genre" value = "reggae">
+            <label for ="reggae"> Reggae</label>
+
+            <input type = "checkbox" id = "hiphop" name ="genre" value = "hiphop">
+            <label for ="hiphop">Hip Hop</label>
+            <p></p>
+            <input type = "checkbox" id = "other" name ="genre" value = "other">
+            <label for ="other"> Other</label>
+
+            <p><br> List your favorite artists/bands: <br></p>
+            <input type = "text" id = "input1" >
+            <input type = "text" id = "input2">
+            <input type = "text" id = "input3">
+
+            <p> If you were to win tickets which show would you like 2 tickets too?</p>
+            <input type = "radio" id = "show1" name = "show" value = "show1">
+            <label for ="show1"> BIRT FLOYD (March 24, 2016)</label>
+
+            <input type = "radio" id = "show2" name = "show" value = "show2">
+            <label for = "show2"> IRON MAIDEN (April 1, 2016)</label>
+
+            <input type = "radio" id = "show3" name = "show" value = "show3">
+            <label for = "show3"> MICHEAL JACKSON (June 17, 2016)</label>
+
+            <input type = "radio" id = "show4" name = "show" value = "show4">
+            <label for = "show4"> ADELE (September 30, 2016)</label>
+        </fieldset>
+    </form>
+<p> Thank you for taking the time to fill out this survey!</p>
+<input type = "submit" value = "Submit">
+<input type = "reset" value = "Reset">
+</body>
+</html>
