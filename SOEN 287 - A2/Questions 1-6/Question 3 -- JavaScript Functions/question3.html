@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3 - JavaScript Functions</title>
+    <script src = "question3.js"></script> 
+</head>
+<body>
+    <h1>This is for Question 3:</h1>
+    <p id= result1></p><!-- These are all undefined -->
+    <p id= result2></p>
+    <p id= result3></p>
+    <p id= result4></p>
+    <p id= result5></p>
+    <p id= result6></p>
+
+    <script>
+        // Function A:
+        const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let sumResults = addNumbers(arr);
+        document.getElementById("result1").innerHTML = "addNumbers[1,2,3,4,5,6,7,8,9,10] = "+ sumResults;
+
+        // Function B:
+        let maxResult = findMaxNumber(arr);
+        document.getElementById("result2").innerHTML ="findMaxNumber(arr) = "+ maxResult;
+
+        //Function C:
+        const arr1 = [4, 5, "3.0 birds", true, "birds2"]; // Output should be 12. 
+        let oddSum = addOddNumbers(arr1);
+        document.getElementById("result3").innerHTML = "addOddNumbers( [4, 5, \"3.0 birds\", true, \"birds2\"]) = "+ oddSum;
+
+        //Funciton D:
+        let digits = getDigits("abc123def45");
+        document.getElementById("result4").innerHTML = " getDigits(\"abc123def45\")= " + digits;
+
+        //Function E:
+        let reverse = reverseString("See you Later!");
+        document.getElementById("result5").innerHTML = "reverseString(\"See you Later!\") = " + reverse;
+
+        //Function F:
+        let currentDate = getCurrentDate();
+        document.getElementById("result6").innerHTML = "getCurrentDate() = " +  currentDate;
+    </script>
+    
+</body>
+</html>

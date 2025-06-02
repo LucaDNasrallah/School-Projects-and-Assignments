@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style2.css">
+    <script src="../js/jsFunctions.js"></script>
+    <title>Home Page for adoptadogorcat.com</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header-container">
+            <div id="header">
+                <h1>Hope For Paws Foundation</h1>
+                <p id = "currentDate"></p>
+                <script>
+                    let currentDate= getCurrentDate();
+                    document.getElementById("currentDate").innerHTML = currentDate;
+                </script>
+            </div>
+            <div class="image-container">         
+                <a href="index.html">       
+                    <img src="../images/hopeforpawsfoundation.webp" alt="Logo">
+                </a>            
+            </div>
+        </div>
+        <div class="main">
+            <div class="sideBar">
+                <nav>
+                    <ul> 
+                        <li class = "home disabled"><a href = "index.html">Home </a></li>
+                        <li><a href= "browse.html"> Browse Available Pets</a></li>
+                        <li><a href="find.html">Find a Dog or a Cat</a></li>
+                        <li><a href="dogcare.html">Dog Care</a></li>
+                        <li><a href = "catcare.html">Cat Care</a></li>
+                        <li><a href = "giveaway.html" >Give Away a Dog or a Cat</a></li>
+                        <li><a href =  "contactus.html">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content">
+                <table style = "text-align: left;">
+                    <tr>
+                        <td>
+                            <h2> Welcome to Hope for Paw Foundation</h2>
+                            <p>The Hope for paws Foundation is dedicated to rescusing and rehoming cats and dogs in need.<br>
+                             It provides a safe shelter, veterinary care, and adoption services to ensure every pet finds a loving home.<br>
+                             Visitors and adopters have access to a network of foster programs, educational resources on pet care, and volunteer opportunities to support animal welfare.<br>
+                            Whether looking to adopt, donate, or help through fostering, the foundation offers a compassionate environment for both animals and the community.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2> Adopt a Dog or a Cat</h2>
+                            <p> Our community have a variety of dogs and cats that are looking for a forever home. <br>
+                             All of our animals are spayed/neutered, up-to-date on vaccinations, and microchipped. <br>
+                             If you are interested in adopting a dog or a cat, please <a href = contactus.html> Contact Us</a>!</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2> Pet Care</h2>
+                            <p> If you wish to know more about ways you can help take care of your new Cat or Dog, visit Our
+                            <a href = "dogcare.html"> Dog Care</a> or <a href = "catcare.html"> Cat Care</a> page. to get the most 
+                            up to date information on how to take care of your pet. </p> 
+                            
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="footer"><a href = "pirvacy.html"> Hope for Paw Foundation &copy; 2025 </a></div>
+    </div>
+</body>
+</html>

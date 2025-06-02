@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style2.css">
+    <script src="../js/jsFunctions.js"></script>
+    <title>Home Page for adoptadogorcat.com</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header-container">
+            <div id="header">
+                <h1>Hope For Paws Foundation</h1>
+                <p id="currentDate"></p>
+                <script>
+                    let currentDate = getCurrentDate();
+                    document.getElementById("currentDate").innerHTML = currentDate;
+                </script>
+            </div>
+            <div class="image-container">         
+                <a href="index.html">       
+                    <img src="../images/hopeforpawsfoundation.webp" alt="Logo">
+                </a>            
+            </div>
+        </div>
+        <div class="main">
+            <div class="sideBar">
+                <nav>
+                    <ul> 
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Available Pets</a></li>
+                        <li class="home disabled"><a href="find.html">Find a Dog or a Cat</a></li>
+                        <li><a href="dogcare.html">Dog Care</a></li>
+                        <li><a href="catcare.html">Cat Care</a></li>
+                        <li><a href="giveaway.html">Give Away a Dog or a Cat</a></li>
+                        <li><a href="contactus.html">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content">
+                <form id="findForm">
+                    <table>
+                        <tr>
+                            <td colspan="2" class="table-heading"><strong>Find a Dog or a Cat!</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Which would you like to choose? <br> 
+                            <td>
+                                <label for="dog">Dog</label>
+                                <input type="radio" id="dog" name="type" value="dog">
+                                <br>
+                                <label for="cat">Cat</label>
+                                <input type="radio" id="cat" name="type" value="cat">
+                                <br>
+                                <label for="doesnt-matter">Doesn't matter</label>
+                                <input type="radio" id="doesnt-matter" name="type" value="doesn't matter">
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="age">Age Category:</label></td>
+                            <td>
+                                <select id="age" name="age">
+                                    <option value="1">0-6 months old</option>
+                                    <option value="2">6-12 months old</option>
+                                    <option value="3">1-4 years old</option>
+                                    <option value="4">4+ years old</option>
+                                    <option value="5">Doesn't matter</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gender:</td>
+                            <td>
+                                <label >Male</label>
+                                <input type="radio" id="male" name="gender" value="male">
+                                <br>
+                                <label>Female</label>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <br>
+                                <label>Doesn't matter</label>
+                                <input type="radio" id="gender-doesnt-matter" name="gender" value="doesn't matter">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Should get along with:</td>
+                            <td>
+                                <label>Other Dogs</label>
+                                <input type="checkbox" id="dogs" name="compatibility" value="dogs">
+                                <br>
+                                <label>Other Cats</label>
+                                <input type="checkbox" id="cats" name="compatibility" value="cats">
+                                <br>
+                                <label>Small Children</label>
+                                <input type="checkbox" id="children" name="compatibility" value="children">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="button-container">
+                                <button type="reset">Clear</button>
+                                <button id="mySubmit">Submit</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="privacy.html">Hope for Paws Foundation &copy; 2025</a>
+        </div>
+    </div>
+    <script>
+        document.getElementById('mySubmit').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent form submission for validation
+    
+            // Check the radio buttons for 'type' (dog, cat, doesn't matter)
+            let typeSelected = false;
+            let typeInputs = document.getElementsByName('type');
+            for (let i = 0; i < typeInputs.length; i++) {
+                if (typeInputs[i].checked) {
+                    typeSelected = true;
+                    break;
+                }
+            }
+            if (!typeSelected) {
+                alert("Please select the type of pet (Dog, Cat, or Doesn't Matter).");
+                return; // Stop further execution if validation fails
+            }
+    
+            // Check the selection for 'age' (age category dropdown)
+            let ageSelected = document.getElementById('age').value;
+            if (ageSelected === "") {
+                alert("Please select an age category.");
+                return;
+            }
+    
+            // Check the radio buttons for 'gender' (male, female, doesn't matter)
+            let genderSelected = false;
+            let genderInputs = document.getElementsByName('gender');
+            for (let i = 0; i < genderInputs.length; i++) {
+                if (genderInputs[i].checked) {
+                    genderSelected = true;
+                    break;
+                }
+            }
+            if (!genderSelected) {
+                alert("Please select a gender.");
+                return;
+            }
+    
+            // Check the checkboxes for 'compatibility' (other dogs, cats, children)
+            let compatibilitySelected = false;
+            let compatibilityInputs = document.getElementsByName('compatibility');
+            for (let i = 0; i < compatibilityInputs.length; i++) {
+                if (compatibilityInputs[i].checked) {
+                    compatibilitySelected = true;
+                    break;
+                }
+            }
+            if (!compatibilitySelected) {
+                alert("Please select at least one compatibility option.");
+                return;
+            }
+    
+            alert("Form submitted successfully!");
+            ;
+        });
+    </script>
+    
+</body>
+</html>

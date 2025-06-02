@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style2.css">
+    <script src="../js/jsFunctions.js"></script>
+    <title>Home Page for adoptadogorcat.com</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header-container">
+            <div id="header">
+                <h1>Hope For Paws Foundation</h1>
+                <p id = "currentDate"></p>
+                <script>
+                    let currentDate= getCurrentDate();
+                    document.getElementById("currentDate").innerHTML = currentDate;
+                </script>
+            </div>
+            <div class="image-container">         
+                <a href="index.html">       
+                    <img src="../images/hopeforpawsfoundation.webp" alt="Logo">
+                </a>            
+            </div>
+        </div>
+        <div class="main">
+            <div class="sideBar">
+                <nav>
+                    <ul> 
+                        <li><a href = "index.html"> Privacy Page</a></li>
+                        <li><a href= "browse.html"> Browse Available Pets</a></li>
+                        <li><a href="find.html">Find a Dog or a Cat</a></li>
+                        <li><a href="dogcare.html">Dog Care</a></li>
+                        <li><a href = "catcare.html">Cat Care</a></li>
+                        <li><a href = "giveaway.html" >Give Away a Dog or a Cat</a></li>
+                        <li><a href =  "contactus.html">Contact us</a></li>
+                        <li class = "home disabled"><a href = "pirvacy.html"> Privacy Policy</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content">
+                <table style = "text-align: left;">
+                    <tr>
+                        <td>
+                            <h2> Privacy Policy</h2>
+                            <p> Hope for Paw Foundation is committed to protecting your privacy.
+                                 We will not sell or distribute your personal information to third parties without your permission. </p>
+                            <p> Your privacy is important to us. Any personal information provided through this form will be kept 
+                                strictly confidential and will only be used for the purpose of facilitating the adoption process.
+                                 We take all necessary precautions to protect your data and ensure it is stored securely. 
+                                 Rest assured, your details will never be shared with third parties without your consent.</p>
+                            <p> <i> The Hope for Paw Foundation will not be heldliable for any errors or issues that may arise during the
+                                 adoption process. We strive to ensure all information is accurate and up-to-date, but cannot guarantee 
+                                 the outcome of any adoption or related process. </i></p>
+                        </td>   
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Certified By : </b> Luca Nasrallah <br>
+                            <b>Student ID: </b> 40316548 <br>
+                            <b>Email: </b> l_nasra@live.concordia.ca
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type = "button" value = "Return to Home Page" onclick = "window.location.href = 'index.html'">
+                            
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="footer"><a href = "pirvacy.html"> Hope for Paw Foundation &copy; 2025 </a></div>
+    </div>
+</body>
+</html>

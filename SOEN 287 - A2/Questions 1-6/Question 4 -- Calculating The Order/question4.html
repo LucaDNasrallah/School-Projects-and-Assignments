@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 - Question 4</title>
+    <script defer src="question4.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Order Books Online</h1>
+    <table>
+        <tr>
+            <td><b>Books:</b></td>
+            <td><b>Quantity:</b></td>
+            <td><b>Price:</b></td>
+        </tr>
+        <tr>
+            <td><b>First Item:</b></td>
+            <td><input style="width: 40%;" type="number" id="input1" min="0"></td>
+            <td>$1.99</td>
+        </tr>
+        <tr>
+            <td><b>Second Item:</b></td>
+            <td><input style="width: 40%;" type="number" id="input2" min="0"></td>
+            <td>$2.99</td>
+        </tr>
+        <tr>
+            <td><b>Third Item:</b></td>
+            <td><input style="width: 40%;" type="number" id="input3" min="0"></td>
+            <td>$3.99</td>
+        </tr>
+        <tr>
+            <td style = "text-align: left;" colspan="3"><button  onclick="calculateOrder()">Calculate The Order</button></td>
+        </tr>
+    </table>
+    <p id="totalPrice"></p>
+</body>
+</html>

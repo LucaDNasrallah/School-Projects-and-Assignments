@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <h1>JavaScript Array</h1>
+    <h2>Print the elements of an array using toString()</h2>
+
+    <p id = "output1"></p>
+    <h2>Print the elements of an array using join() </h2>
+    <p id = "output2"></p>
+    <h2>Print the elements of an array in the format of index: value</h2>
+    <p id = "output3"></p>
+    <script>
+        const arryStr = fruits = ["Banana", "Orange", "Apple", "Mango", 42,false];
+        // A.Print Array using toString() //
+        document.getElementById("output1").innerHTML = fruits.toString();
+
+        // B. Print Array using join() and seperate the elements using &
+        document.getElementById("output2").innerHTML = fruits.join(" & ");
+
+        // Print index: Value format
+        let indexValueFormat = "";
+        fruits.forEach((item,index) => {
+                indexValueFormat += index + ": " + item + "<br>"
+        });
+        document.getElementById("output3").innerHTML = indexValueFormat
+    </script> 
+
+</body>
+</html>

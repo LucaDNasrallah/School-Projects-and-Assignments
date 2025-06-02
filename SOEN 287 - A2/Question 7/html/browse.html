@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style2.css">
+    <script src="../js/jsFunctions.js"></script>
+    <script src="../js/browsePets.js"></script>
+    <title>Home Page for adoptadogorcat.com</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header-container">
+            <div id="header">
+                <h1>Hope For Paws Foundation</h1>
+                <p id="currentDate"></p>
+                <script>
+                    let currentDate = getCurrentDate();
+                    document.getElementById("currentDate").innerHTML = currentDate;
+                </script>
+            </div>
+            <div class="image-container">         
+                <a href="index.html">       
+                    <img src="../images/hopeforpawsfoundation.webp" alt="Logo">
+                </a>            
+            </div>
+        </div>
+        <div class="main">
+            <div class="sideBar">
+                <nav>
+                    <ul> 
+                        <li><a href="index.html">Home</a></li>
+                        <li class="home disabled"><a href="browse.html"> Browse Available Pets</a></li>
+                        <li><a href="find.html">Find a Dog or a Cat</a></li>
+                        <li><a href="dogcare.html">Dog Care</a></li>
+                        <li><a href="catcare.html">Cat Care</a></li>
+                        <li><a href="giveaway.html">Give Away a Dog or a Cat</a></li>
+                        <li><a href="contactus.html">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content">
+                <table style="text-align: left;">
+                    <tr>
+                        <td>
+                            <h2> Available Pets </h2>
+                            <p>The Hope for paws foundation offers a variety of pets to choose from, all of which are looking for their new home and family.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="slideshow-container">
+                                <h2> Adopt a Dog or a Cat</h2>
+                                <img id="slide" alt="Dogs and Cats">
+                                <br>
+                                <button style="background-color: hsl(46, 69%, 60%);" onclick="prevSlide()">Previous</button>
+                                <button style="background-color: hsl(118, 66%, 34%);" onclick="nextSlide()">Next</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="description-container" id="description"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="text-indent:-36px; padding-left: 36px;">
+                            <p>"Cats and Dogs." StockVault, StockVault.net, www.stockvault.net/c/animals/cats-and-dogs. Accessed 23 Mar. 2025.</p>
+                            </div>   
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="footer"><a href="privacy.html"> Hope for Paw Foundation &copy; 2025 </a></div>
+    </div>
+</body>
+</html>
