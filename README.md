@@ -1,1 +1,6 @@
-THE FOLLOWING FILES IN THIS REPO CONTAIN ALL THE CODE AND CONTENT FOR ALL THE CLASS WORK AND PROJECT DONE AT CONCORDIA FOR COMP 248,249 AND COMP 348. 
+The following content shows all the class work and projects done at concordia for the following classes:
+
+COMP 248 - Object Oriented Programming I (JAVA)
+COMP 249 - Object Oriented Programming II (JAVA)
+COMP 348 - Principles of Programming Languages (C, Python, ... , ongoing )
+
